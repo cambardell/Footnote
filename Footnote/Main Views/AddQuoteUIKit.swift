@@ -1,6 +1,6 @@
 //
 //  AddQuoteUIKit.swift
-//  Footnote2
+//  Footnote
 //
 //  Created by Cameron Bardell on 2020-03-06.
 //  Copyright © 2020 Cameron Bardell. All rights reserved.

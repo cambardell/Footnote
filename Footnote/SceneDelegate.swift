@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Footnote2
+//  Footnote
 //
 //  Created by Cameron Bardell on 2019-12-10.
 //  Copyright © 2019 Cameron Bardell. All rights reserved.

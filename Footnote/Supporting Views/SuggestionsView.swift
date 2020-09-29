@@ -1,6 +1,6 @@
 //
 //  SuggestionsView.swift
-//  Footnote2
+//  Footnote
 //
 //  Created by Cameron Bardell on 2020-08-29.
 //  Copyright © 2020 Cameron Bardell. All rights reserved.

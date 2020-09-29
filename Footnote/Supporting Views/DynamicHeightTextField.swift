@@ -1,6 +1,6 @@
 //
 //  DynamicHeightTextField.swift
-//  Footnote2
+//  Footnote
 //
 //  Created by Cameron Bardell on 7/8/20.
 //  Copyright © 2020 Cameron Bardell. All rights reserved.

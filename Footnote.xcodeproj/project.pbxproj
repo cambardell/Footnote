@@ -23,7 +23,7 @@
 		FC96BFED23E1071C00F4BE94 /* UIColor+FootnoteQuoteColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC96BFEC23E1071C00F4BE94 /* UIColor+FootnoteQuoteColors.swift */; };
 		FCD0C83323A070FE00EFA591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0C83223A070FE00EFA591 /* AppDelegate.swift */; };
 		FCD0C83523A070FE00EFA591 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0C83423A070FE00EFA591 /* SceneDelegate.swift */; };
-		FCD0C83823A070FE00EFA591 /* Footnote2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCD0C83623A070FE00EFA591 /* Footnote2.xcdatamodeld */; };
+		FCD0C83823A070FE00EFA591 /* Footnote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCD0C83623A070FE00EFA591 /* Footnote.xcdatamodeld */; };
 		FCD0C83A23A070FE00EFA591 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0C83923A070FE00EFA591 /* ContentView.swift */; };
 		FCD0C83C23A070FF00EFA591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD0C83B23A070FF00EFA591 /* Assets.xcassets */; };
 		FCD0C83F23A070FF00EFA591 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD0C83E23A070FF00EFA591 /* Preview Assets.xcassets */; };
@@ -141,7 +141,7 @@
 				FCD0C83B23A070FF00EFA591 /* Assets.xcassets */,
 				FCD0C84023A070FF00EFA591 /* LaunchScreen.storyboard */,
 				FCD0C84323A070FF00EFA591 /* Info.plist */,
-				FCD0C83623A070FE00EFA591 /* Footnote2.xcdatamodeld */,
+				FCD0C83623A070FE00EFA591 /* Footnote.xcdatamodeld */,
 				FC93374C23DE33490097FE83 /* Fonts */,
 				FCD0C83D23A070FF00EFA591 /* Preview Content */,
 			);
@@ -243,7 +243,7 @@
 				FCD0C83323A070FE00EFA591 /* AppDelegate.swift in Sources */,
 				FCD0C85023A073E900EFA591 /* Cosmetics.swift in Sources */,
 				FC8E91A423DD281000BC1365 /* ImageCreator.swift in Sources */,
-				FCD0C83823A070FE00EFA591 /* Footnote2.xcdatamodeld in Sources */,
+				FCD0C83823A070FE00EFA591 /* Footnote.xcdatamodeld in Sources */,
 				0867228A24B69A6100B6938D /* DynamicHeightTextField.swift in Sources */,
 				FCD2A1B623DA8E6700FF266A /* QuoteDetailView.swift in Sources */,
 				FC96BFED23E1071C00F4BE94 /* UIColor+FootnoteQuoteColors.swift in Sources */,
@@ -456,13 +456,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FCD0C83623A070FE00EFA591 /* Footnote2.xcdatamodeld */ = {
+		FCD0C83623A070FE00EFA591 /* Footnote.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				FCD0C83723A070FE00EFA591 /* Footnote2.xcdatamodel */,
 			);
 			currentVersion = FCD0C83723A070FE00EFA591 /* Footnote2.xcdatamodel */;
-			path = Footnote2.xcdatamodeld;
+			path = Footnote.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

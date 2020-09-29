@@ -1,6 +1,6 @@
 //
 //  bookCoverView.swift
-//  Footnote2
+//  Footnote
 //
 //  Created by Cameron Bardell on 2020-01-25.
 //  Copyright © 2020 Cameron Bardell. All rights reserved.
