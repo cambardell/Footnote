@@ -15,11 +15,12 @@ struct ContentView: View {
     //Controls translation of AddQuoteView
     @State private var offset: CGSize = .zero
     @State var search = ""
-    @State var showAddQuote = false
-    
+    @State var showModal = false
+    @State var showView: ContentViewModals = .addQuoteView
+
     @State private var refreshing = false
     private var didSave =  NotificationCenter.default.publisher(for: .NSManagedObjectContextDidSave)
-
+    
     
     @FetchRequest(
         entity: Quote.entity(),
@@ -30,61 +31,55 @@ struct ContentView: View {
     
     var body: some View {
         
-            NavigationView {
-                ZStack {
-                    VStack {
-                        TextField("Search", text: self.$search)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .padding([.leading, .trailing, .top])
-                        
-                        
-                        if self.search != "" {
-                            FilteredList(filter: self.search).environment(\.managedObjectContext, self.managedObjectContext)
-                        } else {
-                            
-                            List {
-                                ForEach(self.quotes, id: \.self) { quote in
-                                    
-                                    NavigationLink(destination: QuoteDetailView(text: quote.text ?? "", title: quote.title ?? "", author: quote.author ?? "", quote: quote).environment(\.managedObjectContext, self.managedObjectContext)) {
-                                        QuoteItemView(quote: quote)
-                                    }
-                                    .onReceive(self.didSave) { _ in
-                                        self.refreshing.toggle()
-                                        print("refresh")
-                                    }
-                                    
-                                    
-                                }.onDelete(perform: self.removeQuote)
-                                
-                            }.navigationBarTitle("")
-                                .navigationBarHidden(true)
-                        }
-                    }
-                   
-                    // Embedded stacks to put button in bottom corner
-                    HStack {
-                        Spacer()
-                        VStack {
-                            Spacer()
-                            Button(action: {
-                                self.showAddQuote.toggle()
-                            }) {
-                                Image(systemName: "plus.circle.fill")
-                                    .resizable()
-                                    .frame(width: 50, height: 50)
-                                    .foregroundColor(Color.footnoteRed)
-                                    .padding()
-                            }
-                        }
-                    }
+        NavigationView {
+            ZStack {
+                VStack {
+                    TextField("Search", text: self.$search)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding([.leading, .trailing, .top])
                     
+                    
+                    if self.search != "" {
+                        FilteredList(filter: self.search).environment(\.managedObjectContext, self.managedObjectContext)
+                    } else {
+                        
+                        List {
+                            ForEach(self.quotes, id: \.self) { quote in
+                                
+                                NavigationLink(destination: QuoteDetailView(text: quote.text ?? "", title: quote.title ?? "", author: quote.author ?? "", quote: quote).environment(\.managedObjectContext, self.managedObjectContext)) {
+                                    QuoteItemView(quote: quote)
+                                }
+                                .onReceive(self.didSave) { _ in
+                                    self.refreshing.toggle()
+                                    print("refresh")
+                                }
+                                
+                            }.onDelete(perform: self.removeQuote)
+                            
+                        }.navigationBarTitle("Footnote", displayMode: .inline)
+                            .navigationBarItems(leading: HStack {
+                                Button(action: {
+                                    self.showView = .contributorView
+                                    self.showModal.toggle()
+                                } ) {
+                                    Image(systemName: "info")
+                                }
+                                },trailing: Button(action: {
+                                    self.showView = .addQuoteView
+                                self.showModal.toggle()
+                            } ) {
+                                Image(systemName: "plus")
+                            } )
+                    }
                 }
-                
+            }
         }.accentColor(Color.footnoteRed)
-        .sheet(isPresented: $showAddQuote) {
-            AddQuoteUIKit().environment(\.managedObjectContext, self.managedObjectContext)
-            
-                
+            .sheet(isPresented: $showModal) {
+                if self.showView == .addQuoteView {
+                    AddQuoteUIKit().environment(\.managedObjectContext, self.managedObjectContext)
+                } else {
+                    ContributorsView()
+                }
                 
         }
     }
@@ -100,6 +95,11 @@ struct ContentView: View {
             // handle the Core Data error
         }
     }
+}
+
+enum ContentViewModals {
+    case addQuoteView
+    case contributorView
 }
 
 // To preview with CoreData

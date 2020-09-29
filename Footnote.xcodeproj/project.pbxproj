@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0867228A24B69A6100B6938D /* DynamicHeightTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867228924B69A6100B6938D /* DynamicHeightTextField.swift */; };
+		08FA9C202523D88E00F73C72 /* ContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FA9C1F2523D88E00F73C72 /* ContributorsView.swift */; };
 		FC0AC73223DCD94B003219A1 /* BookCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0AC73123DCD94B003219A1 /* BookCoverView.swift */; };
 		FC50DF2324131B0600CB5EB7 /* AddQuoteUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC50DF2224131B0600CB5EB7 /* AddQuoteUIKit.swift */; };
 		FC7C208724FB49C600A5A963 /* SuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7C208624FB49C600A5A963 /* SuggestionsView.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		0867228924B69A6100B6938D /* DynamicHeightTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightTextField.swift; sourceTree = "<group>"; };
+		08FA9C1F2523D88E00F73C72 /* ContributorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
 		FC0AC73123DCD94B003219A1 /* BookCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCoverView.swift; sourceTree = "<group>"; };
 		FC50DF2224131B0600CB5EB7 /* AddQuoteUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteUIKit.swift; sourceTree = "<group>"; };
 		FC7C208624FB49C600A5A963 /* SuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				FCD0C83923A070FE00EFA591 /* ContentView.swift */,
 				FC50DF2224131B0600CB5EB7 /* AddQuoteUIKit.swift */,
 				FCD2A1B523DA8E6700FF266A /* QuoteDetailView.swift */,
+				08FA9C1F2523D88E00F73C72 /* ContributorsView.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				FCD2A1B623DA8E6700FF266A /* QuoteDetailView.swift in Sources */,
 				FC96BFED23E1071C00F4BE94 /* UIColor+FootnoteQuoteColors.swift in Sources */,
 				FC50DF2324131B0600CB5EB7 /* AddQuoteUIKit.swift in Sources */,
+				08FA9C202523D88E00F73C72 /* ContributorsView.swift in Sources */,
 				FCD0C85223A0742600EFA591 /* QuoteItemView.swift in Sources */,
 				FCD0C83A23A070FE00EFA591 /* ContentView.swift in Sources */,
 				FCFB9F7223DBA6EE00A5BD96 /* ImagePicker.swift in Sources */,
