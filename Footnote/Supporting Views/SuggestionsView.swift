@@ -9,13 +9,13 @@
 import SwiftUI
 
 struct SuggestionsView: View {
-    
+
     @ObservedObject var fetcher: BookFetcher
-    
+
     init(searchString: String) {
         fetcher = BookFetcher(searchString: searchString)
     }
-    
+
     var body: some View {
         VStack {
             HStack {
@@ -41,18 +41,18 @@ struct SuggestionsView_Previews: PreviewProvider {
 public class BookFetcher: ObservableObject {
 
     @Published var books = [Book]()
-    
-    init(searchString: String){
+
+    init(searchString: String) {
         load(searchString: searchString)
     }
-    
+
     func load(searchString: String) {
         let queryItems = [URLQueryItem(name: "q", value: searchString), URLQueryItem(name: "page", value: "1")]
         var urlComps = URLComponents(string: "https://openlibrary.org/search.json")!
         urlComps.queryItems = queryItems
         let result = urlComps.url!
-    
-        URLSession.shared.dataTask(with: result) {(data,response,error) in
+
+        URLSession.shared.dataTask(with: result) {(data, _, _) in
             if let data = data {
                 if let decodedResponse = try? JSONDecoder().decode(Books.self, from: data) {
                     DispatchQueue.main.async {
@@ -62,30 +62,29 @@ public class BookFetcher: ObservableObject {
                     return
                 }
             }
-            
+
         }.resume()
-         
+
     }
 }
 
 struct Book: Decodable, Hashable {
-    
+
     let title: String
-    let author_names: [String]
-    
+    let authorNames: [String]
+
     enum CodingKeys: String, CodingKey {
         case title
-        case author_names = "author_name"
+        case authorNames = "author_name"
     }
 }
 
 struct Books: Decodable {
     let numFound: Int
     let allBooks: [Book]
-    
+
     enum CodingKeys: String, CodingKey {
         case numFound
         case allBooks = "docs"
     }
 }
-

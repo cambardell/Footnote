@@ -14,7 +14,7 @@ enum MediaType: Int, CaseIterable {
     case podcast
     case movie
     case tvShow
-    
+
     var stringValue: String {
         switch self {
         case .book:
@@ -27,11 +27,11 @@ enum MediaType: Int, CaseIterable {
             return "TV Show"
         }
     }
-    
+
     func rawCoreDataValue() -> Int16 {
         Int16(self.rawValue)
     }
-    
+
     func getImage() -> String {
         switch self {
         case .book:

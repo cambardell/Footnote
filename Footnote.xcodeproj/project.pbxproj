@@ -25,8 +25,13 @@
 		3FD45D15252A4C3E00A22ED1 /* QuoteCodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD45D01252A43DC00A22ED1 /* QuoteCodableExtension.swift */; };
 		3FD45D1A252A4E6200A22ED1 /* WidgetContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD45D0E252A491100A22ED1 /* WidgetContent.swift */; };
 		3FD45D1D252A51D800A22ED1 /* Footnote2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCD0C83623A070FE00EFA591 /* Footnote2.xcdatamodeld */; };
+		70818478E0D5F9B542E74E31 /* Pods_Footnote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E00C7A554BE25433F1729D /* Pods_Footnote.framework */; };
 		B17E06052525265C00DA0E44 /* MediaTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E06042525265C00DA0E44 /* MediaTypes.swift */; };
+		CFB112FE252B57DF0052A710 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB112FD252B57DF0052A710 /* OnboardingView.swift */; };
+		CFB11302252B58530052A710 /* Button+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB11301252B58530052A710 /* Button+Modifier.swift */; };
+		CFBA65C3252AEA0E003A39B3 /* OnboardingGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBA65C2252AEA0E003A39B3 /* OnboardingGroupView.swift */; };
 		FC0AC73223DCD94B003219A1 /* BookCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0AC73123DCD94B003219A1 /* BookCoverView.swift */; };
+		FC3FB7AD252908BA00F7DC5F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FB7AC252908BA00F7DC5F /* SettingsView.swift */; };
 		FC50DF2324131B0600CB5EB7 /* AddQuoteUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC50DF2224131B0600CB5EB7 /* AddQuoteUIKit.swift */; };
 		FC7C208724FB49C600A5A963 /* SuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7C208624FB49C600A5A963 /* SuggestionsView.swift */; };
 		FC8E91A423DD281000BC1365 /* ImageCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8E91A323DD281000BC1365 /* ImageCreator.swift */; };
@@ -50,6 +55,8 @@
 		FCD0C85223A0742600EFA591 /* QuoteItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0C85123A0742600EFA591 /* QuoteItemView.swift */; };
 		FCD2A1B623DA8E6700FF266A /* QuoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2A1B523DA8E6700FF266A /* QuoteDetailView.swift */; };
 		FCFB9F7223DBA6EE00A5BD96 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB9F7123DBA6EE00A5BD96 /* ImagePicker.swift */; };
+		FFF89966252F165B00CEC44B /* FastlaneSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF89965252F165B00CEC44B /* FastlaneSnapshots.swift */; };
+		FFF89970252F16DA00CEC44B /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF8996F252F16DA00CEC44B /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,9 +99,29 @@
 		3FD45D05252A47E400A22ED1 /* Footnote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Footnote.entitlements; sourceTree = "<group>"; };
 		3FD45D0A252A482500A22ED1 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
 		3FD45D0E252A491100A22ED1 /* WidgetContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetContent.swift; sourceTree = "<group>"; };
+		FFF89968252F165B00CEC44B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCD0C82723A070FE00EFA591 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCD0C82E23A070FE00EFA591;
+			remoteInfo = Footnote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0867228924B69A6100B6938D /* DynamicHeightTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightTextField.swift; sourceTree = "<group>"; };
+		3F2500972527683A00FD83E4 /* ShareSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetView.swift; sourceTree = "<group>"; };
+		7BDD8573C02C2BDDD6F078FB /* Pods-Footnote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Footnote.release.xcconfig"; path = "Target Support Files/Pods-Footnote/Pods-Footnote.release.xcconfig"; sourceTree = "<group>"; };
+		90E00C7A554BE25433F1729D /* Pods_Footnote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Footnote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17E06042525265C00DA0E44 /* MediaTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypes.swift; sourceTree = "<group>"; };
 		B17E060A252529C800DA0E44 /* FootnoteV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FootnoteV2.xcdatamodel; sourceTree = "<group>"; };
+		CFB112FD252B57DF0052A710 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		CFB11301252B58530052A710 /* Button+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Modifier.swift"; sourceTree = "<group>"; };
+		CFBA65B5252AE811003A39B3 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CFBA65C2252AEA0E003A39B3 /* OnboardingGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingGroupView.swift; sourceTree = "<group>"; };
+		D160ACFE7F1C5771019432CC /* Pods-Footnote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Footnote.debug.xcconfig"; path = "Target Support Files/Pods-Footnote/Pods-Footnote.debug.xcconfig"; sourceTree = "<group>"; };
 		FC0AC73123DCD94B003219A1 /* BookCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCoverView.swift; sourceTree = "<group>"; };
+		FC3FB7AC252908BA00F7DC5F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FC50DF2224131B0600CB5EB7 /* AddQuoteUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteUIKit.swift; sourceTree = "<group>"; };
 		FC7C208624FB49C600A5A963 /* SuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsView.swift; sourceTree = "<group>"; };
 		FC8E91A323DD281000BC1365 /* ImageCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCreator.swift; sourceTree = "<group>"; };
@@ -120,6 +147,10 @@
 		FCD0C85123A0742600EFA591 /* QuoteItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteItemView.swift; sourceTree = "<group>"; };
 		FCD2A1B523DA8E6700FF266A /* QuoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailView.swift; sourceTree = "<group>"; };
 		FCFB9F7123DBA6EE00A5BD96 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		FFF89963252F165B00CEC44B /* FastlaneSnapshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastlaneSnapshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF89965252F165B00CEC44B /* FastlaneSnapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastlaneSnapshots.swift; sourceTree = "<group>"; };
+		FFF89967252F165B00CEC44B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF8996F252F16DA00CEC44B /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,16 +167,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70818478E0D5F9B542E74E31 /* Pods_Footnote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF89960252F165B00CEC44B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F3BD9AA25290F230097BC52 /* Frameworks */ = {
+		0CF7110FD5C159D62698990E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3F3BD9AB25290F230097BC52 /* WidgetKit.framework */,
+				90E00C7A554BE25433F1729D /* Pods_Footnote.framework */,
+        3F3BD9AB25290F230097BC52 /* WidgetKit.framework */,
 				3F3BD9AD25290F230097BC52 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
@@ -161,14 +201,32 @@
 				3FD45D0E252A491100A22ED1 /* WidgetContent.swift */,
 			);
 			path = FootnoteWidget;
+		CE06290C7D722E2D842B596A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D160ACFE7F1C5771019432CC /* Pods-Footnote.debug.xcconfig */,
+				7BDD8573C02C2BDDD6F078FB /* Pods-Footnote.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CFB11300252B57EE0052A710 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CFBA65C2252AEA0E003A39B3 /* OnboardingGroupView.swift */,
+				CFB112FD252B57DF0052A710 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		FC50DF242413218100CB5EB7 /* Main Views */ = {
 			isa = PBXGroup;
 			children = (
 				FCD0C83923A070FE00EFA591 /* ContentView.swift */,
+				CFBA65B5252AE811003A39B3 /* SettingsView.swift */,
 				FC50DF2224131B0600CB5EB7 /* AddQuoteUIKit.swift */,
 				FCD2A1B523DA8E6700FF266A /* QuoteDetailView.swift */,
+				FC3FB7AC252908BA00F7DC5F /* SettingsView.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -210,7 +268,10 @@
 				FCD0C83123A070FE00EFA591 /* Footnote */,
 				3F3BD9AF25290F230097BC52 /* FootnoteWidget */,
 				3F3BD9AA25290F230097BC52 /* Frameworks */,
+				FFF89964252F165B00CEC44B /* FastlaneSnapshots */,
 				FCD0C83023A070FE00EFA591 /* Products */,
+				CE06290C7D722E2D842B596A /* Pods */,
+				0CF7110FD5C159D62698990E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,6 +280,7 @@
 			children = (
 				FCD0C82F23A070FE00EFA591 /* Footnote.app */,
 				3F3BD9A925290F230097BC52 /* FootnoteWidgetExtension.appex */,
+				FFF89963252F165B00CEC44B /* FastlaneSnapshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,6 +289,8 @@
 			isa = PBXGroup;
 			children = (
 				3FD45D05252A47E400A22ED1 /* Footnote.entitlements */,
+				CFB11301252B58530052A710 /* Button+Modifier.swift */,
+				CFB11300252B57EE0052A710 /* Onboarding */,
 				FC50DF242413218100CB5EB7 /* Main Views */,
 				FC50DF252413219B00CB5EB7 /* Supporting Views */,
 				FCD0C83223A070FE00EFA591 /* AppDelegate.swift */,
@@ -254,6 +318,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FFF89964252F165B00CEC44B /* FastlaneSnapshots */ = {
+			isa = PBXGroup;
+			children = (
+				FFF8996F252F16DA00CEC44B /* SnapshotHelper.swift */,
+				FFF89965252F165B00CEC44B /* FastlaneSnapshots.swift */,
+				FFF89967252F165B00CEC44B /* Info.plist */,
+			);
+			path = FastlaneSnapshots;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,10 +352,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCD0C84623A070FF00EFA591 /* Build configuration list for PBXNativeTarget "Footnote" */;
 			buildPhases = (
+				B8879BFE165F5578C3EE408B /* [CP] Check Pods Manifest.lock */,
 				FCD0C82B23A070FE00EFA591 /* Sources */,
 				FCD0C82C23A070FE00EFA591 /* Frameworks */,
 				FCD0C82D23A070FE00EFA591 /* Resources */,
 				3F3BD9BB25290F250097BC52 /* Embed App Extensions */,
+				FFDFDBC72530CEEC00BBDEF9 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -289,11 +365,27 @@
 				3F3BD9B925290F250097BC52 /* PBXTargetDependency */,
 			);
 			name = Footnote;
-			packageProductDependencies = (
-			);
 			productName = Footnote2;
 			productReference = FCD0C82F23A070FE00EFA591 /* Footnote.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FFF89962252F165B00CEC44B /* FastlaneSnapshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFF8996C252F165B00CEC44B /* Build configuration list for PBXNativeTarget "FastlaneSnapshots" */;
+			buildPhases = (
+				FFF8995F252F165B00CEC44B /* Sources */,
+				FFF89960252F165B00CEC44B /* Frameworks */,
+				FFF89961252F165B00CEC44B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFF89969252F165B00CEC44B /* PBXTargetDependency */,
+			);
+			name = FastlaneSnapshots;
+			productName = FastlaneSnapshots;
+			productReference = FFF89963252F165B00CEC44B /* FastlaneSnapshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -311,6 +403,10 @@
 					FCD0C82E23A070FE00EFA591 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
+					FFF89962252F165B00CEC44B = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = FCD0C82E23A070FE00EFA591;
+					};
 				};
 			};
 			buildConfigurationList = FCD0C82A23A070FE00EFA591 /* Build configuration list for PBXProject "Footnote" */;
@@ -322,14 +418,13 @@
 				Base,
 			);
 			mainGroup = FCD0C82623A070FE00EFA591;
-			packageReferences = (
-			);
 			productRefGroup = FCD0C83023A070FE00EFA591 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FCD0C82E23A070FE00EFA591 /* Footnote */,
 				3F3BD9A825290F230097BC52 /* FootnoteWidgetExtension */,
+				FFF89962252F165B00CEC44B /* FastlaneSnapshots */,
 			);
 		};
 /* End PBXProject section */
@@ -361,7 +456,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFF89961252F165B00CEC44B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B8879BFE165F5578C3EE408B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Footnote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFDFDBC72530CEEC00BBDEF9 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n    ${PODS_ROOT}/SwiftLint/swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F3BD9A525290F230097BC52 /* Sources */ = {
@@ -387,12 +532,16 @@
 				3FD45D0B252A482500A22ED1 /* AppGroup.swift in Sources */,
 				FCD0C85023A073E900EFA591 /* Cosmetics.swift in Sources */,
 				3FD45D0F252A491100A22ED1 /* WidgetContent.swift in Sources */,
+				CFBA65C3252AEA0E003A39B3 /* OnboardingGroupView.swift in Sources */,
 				FC8E91A423DD281000BC1365 /* ImageCreator.swift in Sources */,
+				CFB11302252B58530052A710 /* Button+Modifier.swift in Sources */,
+				FC3FB7AD252908BA00F7DC5F /* SettingsView.swift in Sources */,
 				FCD0C83823A070FE00EFA591 /* Footnote2.xcdatamodeld in Sources */,
 				0867228A24B69A6100B6938D /* DynamicHeightTextField.swift in Sources */,
 				3F3BD9B725290F250097BC52 /* FootnoteWidget.intentdefinition in Sources */,
 				FCD2A1B623DA8E6700FF266A /* QuoteDetailView.swift in Sources */,
 				3F2500982527683A00FD83E4 /* ShareSheetView.swift in Sources */,
+				CFB112FE252B57DF0052A710 /* OnboardingView.swift in Sources */,
 				FC96BFED23E1071C00F4BE94 /* UIColor+FootnoteQuoteColors.swift in Sources */,
 				FC50DF2324131B0600CB5EB7 /* AddQuoteUIKit.swift in Sources */,
 				3F56D94E253826DD00DF82BC /* SearchBar.swift in Sources */,
@@ -403,6 +552,15 @@
 				FCD0C83523A070FE00EFA591 /* SceneDelegate.swift in Sources */,
 				FC0AC73223DCD94B003219A1 /* BookCoverView.swift in Sources */,
 				3FD45D02252A43DC00A22ED1 /* QuoteCodableExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF8995F252F165B00CEC44B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF89966252F165B00CEC44B /* FastlaneSnapshots.swift in Sources */,
+				FFF89970252F16DA00CEC44B /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +750,7 @@
 		};
 		FCD0C84723A070FF00EFA591 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D160ACFE7F1C5771019432CC /* Pods-Footnote.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -619,6 +778,7 @@
 		};
 		FCD0C84823A070FF00EFA591 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BDD8573C02C2BDDD6F078FB /* Pods-Footnote.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -641,6 +801,46 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FFF8996A252F165B00CEC44B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
+				INFOPLIST_FILE = FastlaneSnapshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushpinderpalsingh.FastlaneSnapshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Footnote;
+			};
+			name = Debug;
+		};
+		FFF8996B252F165B00CEC44B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
+				INFOPLIST_FILE = FastlaneSnapshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushpinderpalsingh.FastlaneSnapshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Footnote;
 			};
 			name = Release;
 		};
@@ -670,6 +870,15 @@
 			buildConfigurations = (
 				FCD0C84723A070FF00EFA591 /* Debug */,
 				FCD0C84823A070FF00EFA591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFF8996C252F165B00CEC44B /* Build configuration list for PBXNativeTarget "FastlaneSnapshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF8996A252F165B00CEC44B /* Debug */,
+				FFF8996B252F165B00CEC44B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

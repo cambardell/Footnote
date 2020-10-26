@@ -1,0 +1,38 @@
+{
+  "default": {
+    "keyword": {
+      "fonts": [
+        {
+          "font": "./fonts/BebasNeue-Regular.ttf",
+          "supported": ["en-US"]
+        }
+      ],
+    "color": "#FFFFFF"
+    },
+    "title": {
+      "fonts": [
+        {
+          "font": "./fonts/BebasNeue-Regular.ttf",
+          "supported": ["en-US"]
+        }
+      ],
+      "color":"#d8d8d8"
+    },
+    "background": "../background.png",
+    "padding": 50
+  },
+  "data": [
+    {
+      "filter": "Onboarding"
+    },
+    {
+      "filter": "Home"
+    },
+    {
+      "filter": "About"
+    },
+    {
+      "filter": "Quotes"
+    }
+  ]
+}

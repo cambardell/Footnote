@@ -17,11 +17,11 @@ struct BookCoverView: View {
             .clipShape(Rectangle())
             .overlay(
                 Rectangle().stroke(Color.footnoteRed, lineWidth: 2))
-            
+
     }
 }
 
-struct bookCoverView_Previews: PreviewProvider {
+struct BookCoverView_Previews: PreviewProvider {
     static var previews: some View {
         BookCoverView(image: Image(systemName: "square"))
     }
