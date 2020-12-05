@@ -61,24 +61,26 @@ struct SettingsView: View {
     }
     var body: some View {
       HStack(alignment: .center) {
-        Image(systemName: "gear")
-            .renderingMode(.original)
-            .resizable()
-            .cornerRadius(20)
-            .frame(width: 60, height: 60)
-            .clipped()
-            .aspectRatio(contentMode: .fit)
 
         VStack(alignment: .leading, spacing: nil/*@END_MENU_TOKEN@*/, content: {
-            Text("Footnote - IOS SwiftUI Open-Source Application developed during Hacktoberfest 2020.")
+            Text("Thank You").font(.title).foregroundColor(.footnoteRed)
+            Text("Footnote was developed by a team of collaborators as a part of Hacktoberfest 2020. Thank you to all of our contributors.\n")
                 .font(.system(size: 18))
                 .lineLimit(nil)
+            Text("Special thanks to Bekah, Sara, Kirk, Dan, Bryan for their leadership, and VC as a whole for their friendship and support at the time we needed it most.\n")
+                .font(.system(size: 18))
+                .lineLimit(nil)
+
+            Text("Contributors: JapneetSingh5, Drag0ndust, rajhraval1, VPhung24, pushpinderpalsingh, stevenanthonyrevo, rarcilla, cpabbathi, Taenerys, M1zz, EcMscS")
+
+
+            Spacer()
+
             Button("Export Quotes as JSON") {
                 let _: () = self.jsonRender()
-            }
+            }.foregroundColor(.footnoteRed)
             .padding(.top, 20)
             .padding(.bottom, 20)
-            Text("\(jsonData)" as String)
         })
       }.padding()
     }
